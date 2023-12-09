@@ -1,4 +1,4 @@
-import 'package:baby_milestone_tracker/dashboard.dart';
+import 'package:baby_milestone_tracker/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:intro_slider/intro_slider.dart';
 

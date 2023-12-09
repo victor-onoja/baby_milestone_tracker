@@ -1,5 +1,4 @@
-import 'package:baby_milestone_tracker/introscreen_custom.dart';
-
+import 'package:baby_milestone_tracker/screens/introscreen_custom.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
