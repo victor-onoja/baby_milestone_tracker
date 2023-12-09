@@ -23,7 +23,7 @@ Baby Milestones Tracker is a mobile app built with Flutter, a UI toolkit for cre
 
 ### Packages used
 
-- Shared Preferences: The shared_preferences package is used for persisting simple data in key-value pairs on the device. In the Baby Milestones Tracker app, it is employed to store user's milestones This ensures that users' preferences are retained between app sessions.
+- Shared Preferences: The shared_preferences package is used for persisting simple data in key-value pairs on the device. In the Baby Milestones Tracker app, it is employed to store user's milestones which are retained between app sessions.
 - UUID: The uuid package is utilized for generating unique identifiers for milestones. Each milestone is assigned a unique ID using uuid to ensure that the data remains distinct and identifiable.
 - Intro Slider: The intro_slider package is integrated to create an onboarding experience for new users. It provides a simple and engaging way to introduce users to the app's features and functionality.
 
