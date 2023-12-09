@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+
 import 'package:uuid/uuid.dart';
 import 'milestone_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -49,19 +50,25 @@ class _DashboardState extends State<Dashboard> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text('Add Milestone'),
+          title: const Text(
+            'Add Milestone',
+            style: TextStyle(fontFamily: 'Caveat', fontSize: 24),
+          ),
           content: SingleChildScrollView(
             child: Column(
               children: [
                 TextFormField(
+                  style: const TextStyle(fontFamily: 'Caveat', fontSize: 18),
                   decoration: const InputDecoration(labelText: 'Date'),
                   onChanged: (value) => newMilestone.date = value,
                 ),
                 TextFormField(
+                  style: const TextStyle(fontFamily: 'Caveat', fontSize: 18),
                   decoration: const InputDecoration(labelText: 'Type'),
                   onChanged: (value) => newMilestone.type = value,
                 ),
                 TextFormField(
+                  style: const TextStyle(fontFamily: 'Caveat', fontSize: 18),
                   decoration: const InputDecoration(labelText: 'Notes'),
                   onChanged: (value) => newMilestone.notes = value,
                 ),
@@ -78,14 +85,20 @@ class _DashboardState extends State<Dashboard> {
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: const Text('Cancel'),
+              child: const Text(
+                'Cancel',
+                style: TextStyle(fontFamily: 'Caveat', fontSize: 18),
+              ),
             ),
             ElevatedButton(
               onPressed: () {
                 addMilestone(newMilestone);
                 Navigator.pop(context);
               },
-              child: const Text('Submit'),
+              child: const Text(
+                'Submit',
+                style: TextStyle(fontFamily: 'Caveat', fontSize: 18),
+              ),
             ),
           ],
         );
@@ -114,21 +127,27 @@ class _DashboardState extends State<Dashboard> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text('Edit Milestone'),
+          title: const Text(
+            'Edit Milestone',
+            style: TextStyle(fontFamily: 'Caveat', fontSize: 24),
+          ),
           content: SingleChildScrollView(
             child: Column(
               children: [
                 TextFormField(
+                  style: const TextStyle(fontFamily: 'Caveat', fontSize: 18),
                   initialValue: editedMilestone.date,
                   decoration: const InputDecoration(labelText: 'Date'),
                   onChanged: (value) => editedMilestone.date = value,
                 ),
                 TextFormField(
+                  style: const TextStyle(fontFamily: 'Caveat', fontSize: 18),
                   initialValue: editedMilestone.type,
                   decoration: const InputDecoration(labelText: 'Type'),
                   onChanged: (value) => editedMilestone.type = value,
                 ),
                 TextFormField(
+                  style: const TextStyle(fontFamily: 'Caveat', fontSize: 18),
                   initialValue: editedMilestone.notes,
                   decoration: const InputDecoration(labelText: 'Notes'),
                   onChanged: (value) => editedMilestone.notes = value,
@@ -147,14 +166,20 @@ class _DashboardState extends State<Dashboard> {
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: const Text('Cancel'),
+              child: const Text(
+                'Cancel',
+                style: TextStyle(fontFamily: 'Caveat', fontSize: 18),
+              ),
             ),
             ElevatedButton(
               onPressed: () {
                 editMilestone(editedMilestone);
                 Navigator.pop(context);
               },
-              child: const Text('Save Changes'),
+              child: const Text(
+                'Save Changes',
+                style: TextStyle(fontFamily: 'Caveat', fontSize: 18),
+              ),
             ),
           ],
         );
@@ -177,7 +202,10 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Baby Milestone Tracker'),
+        title: const Text(
+          'Baby Milestone Tracker',
+          style: TextStyle(fontFamily: 'Caveat', fontSize: 24),
+        ),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
@@ -191,8 +219,13 @@ class _DashboardState extends State<Dashboard> {
         itemBuilder: (context, index) {
           return ListTile(
             title: Text(
-                'Date: ${milestones[index].date} \nType: ${milestones[index].type}'),
-            subtitle: Text('Notes: ${milestones[index].notes}'),
+              'Date: ${milestones[index].date} \nType: ${milestones[index].type}',
+              style: const TextStyle(fontFamily: 'Caveat', fontSize: 18),
+            ),
+            subtitle: Text(
+              'Notes: ${milestones[index].notes}',
+              style: const TextStyle(fontFamily: 'Caveat', fontSize: 18),
+            ),
             trailing: IconButton(
               icon: const Icon(Icons.edit),
               onPressed: () {
