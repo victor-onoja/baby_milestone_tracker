@@ -11,6 +11,7 @@ Baby Milestones Tracker is a mobile app built with Flutter, a UI toolkit for cre
 - Onboarding Screen: Welcomes users to the app, providing information on how to use it effectively.
 - Dashboard: Allows mothers to view a list of milestones and navigate to add or edit them.
 - Milestone Editing: Users can add, view, and edit milestones, including details like date, milestone type, notes, and optional images.
+- Light and Dark Modes: Supports both light and dark themes for user preference.
 
 ## Project Structure
 
@@ -29,3 +30,5 @@ Baby Milestones Tracker is a mobile app built with Flutter, a UI toolkit for cre
 ### other design decision
 
 - Fonts: Custom fonts are used to enhance the visual appeal of the app. The Caveat font family is chosen, which includes both regular and bold variants. These fonts are included in the assets directory and specified in the pubspec.yaml file.
+- State Management: The app uses setState for simple state management.
+- Onboarding: The onboarding screen provides clear instructions on using the app and highlights the importance of tracking baby milestones.
