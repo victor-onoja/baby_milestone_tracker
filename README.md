@@ -14,9 +14,9 @@ Baby Milestones Tracker is a mobile app built with Flutter, a UI toolkit for cre
 
 ## Project Structure
 
-lib/: Contains the main Dart code for the app.
-screens/: Contains the different screens of the app (e.g., onboarding, dashboard).
-models/: Includes the data models used in the app (e.g., Milestone).
+- lib/: Contains the main Dart code for the app.
+- screens/: Contains the different screens of the app (e.g., onboarding, dashboard).
+- models/: Includes the data models used in the app (e.g., Milestone).
 
 ## Design Decisions
 
